@@ -1,0 +1,338 @@
+*, body{
+  list-style: none;
+  font-family: "Pretendard";
+}
+
+/* layout */
+#root{
+  background-color: #f3f0ea;
+}
+html{
+  font-size: 10px;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+#hd a{
+  text-decoration: none;
+  color: rgb(55, 55, 55);
+}
+.nav-link{
+  position: relative;
+  
+}
+.nav-link:before{
+  content: "";
+  display: block;
+  width:100%;
+  height:3px;
+  color:transparent;
+  position: absolute;
+  left:0; right:0;
+  
+  transition: 0.5s;
+  top: calc(100% - 2px);
+}
+.active .nav-link:before{
+  background-color: #C6004D;
+}
+.active .nav-link{
+  color:#C6004D !important
+}
+
+#hd .gnb {
+  font-weight: 600;
+  
+  line-height: 60px;
+}
+
+
+.gnb li .nav-link{
+  font-size: 2.2rem;
+  display: block;
+  padding: 0 25px !important;
+}
+
+.px50px{
+  padding: 0 25px;
+}
+.px15px{
+  padding: 0 7.5px;
+}
+
+#hd{ 
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  background-color: white;
+  
+}
+
+
+
+#hd ul{
+  padding: 0;
+  margin: 0;
+}
+#hd i{
+  font-size: 3rem;
+}
+#hd i:hover{
+  color: #C6004D;
+}
+
+#hd h1 img{
+  
+  height: 50px;
+  padding: 5px 0;
+  
+}
+#navbar-nav{
+  height: 60px;
+}
+.navbar-nav, .nav-link{
+  height: 100%;
+}
+
+/* .kakao-link{
+  position: fixed;
+  right: 90px;
+  bottom: 75px;
+  border: 0;
+  padding: 0;
+  border-radius: 30px;
+}
+.kakao-link img{
+  width: 100px;
+  border-radius: 30px; 
+} */
+
+.cardevent, .cesarevent{
+  justify-content: center;
+}
+.mainbanner{
+  padding-top: 110px;
+}
+
+.mainbanner img{
+  width: 100%;
+}
+
+#event{
+  padding-top: 10vw;
+}
+#event .cesarevent img{
+  width: 760px;
+}
+
+
+/* contents */
+
+#contents{
+  margin-top: 10vw;
+}
+#contents img{
+  width: 100%;
+}
+#contents .con-title{
+  margin-bottom: 13vw;
+}
+#contents .con-title h2{
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+#contents .con-title .con-comp{
+  margin-top: 80px;
+}
+#contents .con-title .con-comp h3{
+  font-size: 3rem;
+  font-weight: 500;
+}
+#contents .con-title p{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(110, 110, 110);
+}
+.con-comp img{
+  border-radius: 30px;
+}
+
+#contents .con-title .con-comp .con-comp-text-2{}
+#contents .mainimg{
+  margin: 15vw 0;
+}
+
+
+/* detailed-spec */
+#detail-spec{
+  padding: 80px 0;
+}
+#detail-spec img{
+  width: 100%;
+}
+#detail-spec h3{
+  color: rgb(100, 100, 100);
+  font-size: 30px;
+}
+#detail-spec li{
+  list-style: inside;
+  font-size: 20px;
+  color: rgb(110, 110, 110);
+}
+
+#ft{
+  height: 200px;
+  background-color: #C6004D;
+}
+
+.bottomlogo{
+  width: 300px;
+}
+
+.width-50{
+  width: 50%;
+}
+
+.ft-tel{
+  color: white;
+  font-size: 4rem;
+}
+
+.swiper{
+  margin-top: 62px;
+}
+
+
+
+/* swiper */
+
+.swiper-slide{
+  height: 33vw;
+}
+
+
+
+
+/* media */
+
+
+@media(min-width : 768px){
+  .mainimg-dt{
+    display: block;
+  }
+  .mainimg-mo{
+    display: none;
+  }
+  .detail-spec-dt{
+    display: block;
+  }
+  .detail-spec-mo{
+    display: none;
+  }
+
+  .cardevent{
+    display: block;
+  }
+  .cardevent-mo{
+    display: none;
+  }
+
+  .navbar-nav{
+    margin-left: 30px;
+  }
+
+  #hd{
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+  }
+}
+
+
+@media(max-width : 767px){
+  .mainimg-dt{
+    display: none;
+  }
+  .mainimg-mo{
+    display: block;
+  }
+  .detail-spec-dt{
+    display: none;
+  }
+  .detail-spec-mo{
+    display: block;
+  }
+
+  .cardevent{
+    display: none;
+  }
+  .cardevent-mo{
+    display: block;
+  }
+
+  #contents .con-title h2{
+    font-size: 2.8rem;
+  }
+  #contents .con-title p{
+    font-size: 1.5rem;
+  }
+  #contents .con-title .con-comp h3{
+    font-size: 2.3rem;
+  }
+
+  .R5-voice{
+    flex-direction: column;
+  }
+  .R5-voice div{
+    width: 70%;
+  }
+  .R5-voice-img{
+    padding-bottom: 30px;
+  }
+
+  .my-link{
+    order: -1;
+  }
+
+  .gnb{
+    justify-content: center;    
+  }
+  #hd .gnb > li{
+    margin: 0;
+  }
+ 
+  .toplogo a{
+    margin: 0;
+  }
+  
+}
+
+@media(max-width : 575px){
+  #contents .con-title h2{
+    font-size: 2.4rem;
+  }
+  #contents .con-title p{
+    font-size: 1.2rem;
+  }
+  #contents .con-title .con-comp h3{
+    font-size: 1.7rem;
+  }
+
+  #detail-spec h3{
+    font-size: 2.2rem;
+  }
+  #detail-spec li{
+    font-size: 1.7rem;
+  }
+
+  .gnb li .nav-link{
+    font-size: 1.9rem;
+  }
+}
+
+@media(max-width : 464px){
+  .gnb li .nav-link{
+    font-size: 1.5rem;
+  }
+}
