@@ -3,19 +3,19 @@ import { Nav, Navbar } from 'react-bootstrap';
 import Scrollspy from 'react-scrollspy';
 
 
-const Header = () => {
-  const supportname = [
-    {link : "#", name : "bi bi-github"},
-    {link : "#", name : "bi bi-person-circle"}
-  ]
-  const gnbname = [
-    { link: "event", tname: "이벤트" },
-    { link: "contents", tname: "제품소개" },
-    { link: "detail-spec", tname: "상세스펙" },
-    { link: "store", tname: "스토어" }
-  ];
+const Header = (props) => {
+  // const supportname = [
+  //   {link : "#", name : "bi bi-github"},
+  //   {link : "#", name : "bi bi-person-circle"}
+  // ]
+  // const gnbname = [
+  //   { link: "event", tname: "이벤트" },
+  //   { link: "contents", tname: "제품소개" },
+  //   { link: "detail-spec", tname: "상세스펙" },
+  //   { link: "store", tname: "스토어" }
+  // ];
 
-  const linknm =  gnbname.map((v, i)=>{
+  const linknm =  props.dbinfo.gnbname.map((v, i)=>{
     return v.link
   })
 
@@ -45,7 +45,7 @@ const Header = () => {
                 componentTag="ul"
                 className="gnb d-flex"
               >
-                {gnbname.map((item, index) => (
+                {props.dbinfo.gnbname.map((item, index) => (
                   <li key={index}>
                     <Nav.Link href={`#${item.link}`}>{item.tname}</Nav.Link>
                   </li>
@@ -55,7 +55,7 @@ const Header = () => {
           </Navbar.Collapse>
           
             <ul className='d-flex my-link'>
-            {supportname.map((v,i)=>(
+            {props.dbinfo.supportname.map((v,i)=>(
               <li key={`support${i}`} className='ms-4 mt-1'>
                 <a href={v.link}><i class={v.name}></i></a>
             </li>

@@ -1,0 +1,18 @@
+{
+    "supportname" : [
+        {"link" : "#", "name" : "bi bi-github"},
+        {"link" : "#", "name" : "bi bi-person-circle"}
+      ],
+    "gnbname" : [
+        { "link": "event", "tname": "이벤트" },
+        { "link": "contents", "tname": "제품소개" },
+        { "link": "detail-spec", "tname": "상세스펙" },
+        { "link": "store", "tname": "스토어" }
+      ],
+      "eventname" : [
+        {"cls" : "cardevent-mo mb-5", "link" : "#", "src" : "cardevent-mo.png"},
+        {"cls" : "cardevent mb-5", "link" : "#", "src" : "cardevent.png"},
+        {"cls" : "cesarevent", "link" : "#", "src" : "cesarevent.png"}
+    ]
+    
+}
