@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header dbinfo={db}></Header>
-      <Banner></Banner>
+      <Banner dbinfo={db}></Banner>
       <Event dbinfo={db}></Event>
       <Contents></Contents>
       <Detailed></Detailed>

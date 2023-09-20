@@ -5,7 +5,7 @@
 
 /* layout */
 #root{
-  background-color: #f3f0ea;
+  background-color: #fbfaf8;
 }
 html{
   font-size: 10px;
@@ -94,18 +94,24 @@ img{
   height: 100%;
 }
 
-/* .kakao-link{
-  position: fixed;
-  right: 90px;
-  bottom: 75px;
-  border: 0;
-  padding: 0;
-  border-radius: 30px;
+.banner-mo-img{
+  display: none;
+  width: 100%;
 }
-.kakao-link img{
-  width: 100px;
-  border-radius: 30px; 
-} */
+.banner-text{
+  top: 30%;
+  left: 15%;
+}
+.banner-text h3{
+  font-size: 2.3vw;
+  font-weight: 700;
+  color: rgb(22, 22, 22);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.banner-text p{
+  font-size: 1.5vw;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
 
 .cardevent, .cesarevent{
   justify-content: center;
@@ -183,12 +189,14 @@ img{
 }
 
 #ft{
-  height: 200px;
   background-color: #C6004D;
+}
+#ft>div{
+  padding: 25px 0;
 }
 
 .bottomlogo{
-  width: 300px;
+  width: 150px;
 }
 
 .width-50{
@@ -205,12 +213,6 @@ img{
 }
 
 
-
-/* swiper */
-
-.swiper-slide{
-  height: 33vw;
-}
 
 
 
@@ -251,6 +253,14 @@ img{
 
 
 @media(max-width : 767px){
+
+  .banner-img{
+    display: none;
+  }
+  .banner-mo-img{
+    display: block;
+  }
+
   .mainimg-dt{
     display: none;
   }
@@ -305,10 +315,28 @@ img{
   .toplogo a{
     margin: 0;
   }
+
+  .banner-text{
+    top: 20%;
+    left: 15%;
+    width: 70%;
+  }
+  .banner-text h3{
+    font-size: 5vw;
+    font-weight: 700;
+    color: rgb(22, 22, 22);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  }
+  .banner-text p{
+    font-size: 3.6vw;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
   
 }
 
-@media(max-width : 575px){
+
+
+@media(max-width : 600px){
   #contents .con-title h2{
     font-size: 2.4rem;
   }
@@ -332,7 +360,18 @@ img{
 }
 
 @media(max-width : 464px){
+  #hd h1 img{
+    height: 30px;
+  }
   .gnb li .nav-link{
     font-size: 1.5rem;
+    padding: 0 20px !important;
+  }
+}
+
+@media(max-width : 375px){
+  .gnb li .nav-link{
+    font-size: 1.5rem;
+    padding: 0 10px !important;
   }
 }

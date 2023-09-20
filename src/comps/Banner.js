@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 
 
 
-export default Banner => {
+const Banner = (props) => {
   return (
     <Swiper
       spaceBetween={0}
@@ -21,19 +21,34 @@ export default Banner => {
         disableOnInteraction: false,
       }}
       loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      // navigation={true}
+      
       modules={[Autoplay, Pagination, Navigation]}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide><a href=""><img className='position-relative' src={`${process.env.PUBLIC_URL}/img/bannerimg/R5-mainbanner.jpg`} alt="banner-1" /></a></SwiperSlide>
-      <SwiperSlide><a href=""><img className='position-relative' src={`${process.env.PUBLIC_URL}/img/bannerimg/gall-air-banner.gif`} alt="banner-2" /></a></SwiperSlide>
-      <SwiperSlide><a href=""><img className='position-relative' src={`${process.env.PUBLIC_URL}/img/bannerimg/HERO-banner.jpg`} alt="banner-3" /></a></SwiperSlide>
-      <SwiperSlide><a href=""><img className='position-relative'   src={`${process.env.PUBLIC_URL}/img/bannerimg/life-good-banner.jpg`} alt="banner-4" /></a></SwiperSlide>
+    >{
+      props.dbinfo.bannerdb.map((v,i)=>{
+        
+        return(
+        <SwiperSlide>
+          <div className='position-relative'>
+            <a href={v.link}>
+              <img className='position-relative banner-img' src={`${process.env.PUBLIC_URL}${v.img}`} alt="banner-1" />
+              <img className='position-relative banner-mo-img' src={`${process.env.PUBLIC_URL}${v.moimg}`} alt="banner-1" />
+            </a>
+            <div className='banner-text position-absolute'>
+              <h3 className={v.titlestyle}>{v.title}</h3>
+              <p className={v.textstyle}>{v.text}</p>
+            </div>
+          </div>          
+        </SwiperSlide>
+        )
+        
+      })      
+    }     
       
     </Swiper>
   );
 };
+
+
+export default Banner;
