@@ -4,16 +4,7 @@ import Scrollspy from 'react-scrollspy';
 
 
 const Header = (props) => {
-  // const supportname = [
-  //   {link : "#", name : "bi bi-github"},
-  //   {link : "#", name : "bi bi-person-circle"}
-  // ]
-  // const gnbname = [
-  //   { link: "event", tname: "이벤트" },
-  //   { link: "contents", tname: "제품소개" },
-  //   { link: "detail-spec", tname: "상세스펙" },
-  //   { link: "store", tname: "스토어" }
-  // ];
+  
 
   const linknm =  props.dbinfo.gnbname.map((v, i)=>{
     return v.link
@@ -27,8 +18,7 @@ const Header = (props) => {
 
   return (
     <>
-      <Navbar expand="md" id="hd" className="d-flex flex-wrap fixed-top py-0">
-        {/* <div className="col-12 text-center border-bottom">Phone Number for Advertisement Page</div> */}
+      <Navbar expand="md" id="hd" className="d-flex flex-wrap fixed-top py-0">        
         <div className="container-lg">
           <h1 className="toplogo mb-0">
             <Navbar.Brand href="/" className="d-block">
@@ -57,7 +47,7 @@ const Header = (props) => {
             <ul className='d-flex my-link'>
             {props.dbinfo.supportname.map((v,i)=>(
               <li key={`support${i}`} className='ms-4 mt-1'>
-                <a href={v.link}><i class={v.name}></i></a>
+                <a href={v.link} target={v.target}><i class={v.name}></i></a>
             </li>
             ))}
             </ul>

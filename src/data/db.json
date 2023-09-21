@@ -1,13 +1,13 @@
 {
     "bannerdb" : [
-        {"link" : "#", "img" : "/img/bannerimg/R5-mainbanner.jpg", "alt" : "banner-1", "moimg" : "/img/bannerimg/mobile/R5-mo-mainbanner.jpg"},
-        {"link" : "#", "img" : "/img/bannerimg/Hero_PC_Refri.jpg", "alt" : "banner-1", "moimg" : "/img/bannerimg/mobile/Hero_MO_Refri_1.jpg", "title" : "미리 준비하는 김치냉장고 기획전", "text" : "#용량별 #특가상품 #세트모델추천","titlestyle":"text-black","textstyle":"text-dark"},
-        {"link" : "#", "img" : "/img/bannerimg/A_Hero_PC_Evening.jpg", "alt" : "banner-1", "moimg" : "/img/bannerimg/mobile/A_Hero_MO_Evening_2.jpg", "title" : "바쁜 고객님의 일상에 발맞춘 이브닝서비스", "text" : "#사전예약제 #퇴근후서비스","titlestyle":"text-black","textstyle":"text-dark"}
+        {"link" : "#none", "img" : "/img/bannerimg/R5-mainbanner.jpg", "alt" : "banner-1", "moimg" : "/img/bannerimg/mobile/R5-mo-mainbanner.jpg"},
+        {"link" : "#none", "img" : "/img/bannerimg/Hero_PC_Refri.jpg", "alt" : "banner-1", "moimg" : "/img/bannerimg/mobile/Hero_MO_Refri_1.jpg", "title" : "미리 준비하는 김치냉장고 기획전", "text" : "#용량별 #특가상품 #세트모델추천","titlestyle":"text-black","textstyle":"text-dark"},
+        {"link" : "#none", "img" : "/img/bannerimg/A_Hero_PC_Evening.jpg", "alt" : "banner-1", "moimg" : "/img/bannerimg/mobile/A_Hero_MO_Evening_2.jpg", "title" : "바쁜 고객님의 일상에 발맞춘 이브닝서비스", "text" : "#사전예약제 #퇴근후서비스","titlestyle":"text-white","textstyle":"text-dark"}
         
       ],
     "supportname" : [
-        {"link" : "#", "name" : "bi bi-github"},
-        {"link" : "#", "name" : "bi bi-person-circle"}
+        {"link" : "https://github.com/hybf1212", "name" : "bi bi-github", "target" : "_blank"},
+        {"link" : "#none", "name" : "bi bi-person-circle"}
       ],
     "gnbname" : [
         { "link": "event", "tname": "이벤트" },
