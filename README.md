@@ -2,7 +2,7 @@
   리액트 프로젝트 깃페이지 배포
 
 # 제작특징
-  추후 유지보수 협업을 위한 DB분리 : db.json ( 80% 컴포넌트 컨텐츠 관리 )
+  추후 유지보수 협업을 위한 DB분리 : db.json
 
 # 제작기간
   기획 / 1주
@@ -18,4 +18,4 @@
     "swiper": "^10.0.4",
 
 # 기타정보
- https://www.notion.so/8918e329492d49ae9d3f3d666568bdf0
+https://wry-quilt-83a.notion.site/UXUI-_-_230502-7e11478eeaf0493bb3effdc9731ef669?pvs=4
