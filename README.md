@@ -1,3 +1,6 @@
+# LINK
+  https://hybf1212.github.io/react_LG_R5/
+
 # 이민호 Nodejs NCS 훈련 5개월 
   리액트 프로젝트 깃페이지 배포
 
@@ -18,4 +21,4 @@
     "swiper": "^10.0.4",
 
 # 기타정보
-https://wry-quilt-83a.notion.site/UXUI-_-_230502-7e11478eeaf0493bb3effdc9731ef669?pvs=4
+  https://wry-quilt-83a.notion.site/UXUI-_-_230502-7e11478eeaf0493bb3effdc9731ef669?pvs=4
